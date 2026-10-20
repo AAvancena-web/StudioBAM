@@ -369,3 +369,9 @@ a.feature .feature-cta svg{width:18px}
   .logo-mark{width:40px;height:40px}
   .quote-mark{font-size:8rem}
 }
+
+/* Overflow guards */
+html,body{overflow-x:clip}
+section{overflow-x:clip}
+.hero-grid>*,.intro-grid>*,.testi-wrap>*,.faq-grid>*{min-width:0}
+@media (max-width:767px){.btn{white-space:normal;text-align:center;padding:17px 22px}}
