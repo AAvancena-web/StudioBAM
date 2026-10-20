@@ -483,3 +483,18 @@ a.work.in .cap::before{transform:scaleX(1)}
   .split-h .wi,a.path,.index a.row>*,.stat,.cta h2{transform:none!important;opacity:1!important;transition:none!important}
   .band,.wipe{clip-path:none!important}
 }
+
+/* Areas served */
+.areas{display:grid;grid-template-columns:repeat(5,1fr);column-gap:clamp(16px,2vw,32px);row-gap:44px}
+.area{border-top:1px solid var(--ink);padding-top:20px}
+.area h4{font-family:var(--sans);font-weight:500;font-size:1.35rem;letter-spacing:-.01em;margin:0 0 18px;display:flex;align-items:baseline;gap:12px}
+.area h4 span{font-size:.75rem;color:var(--green-deep);letter-spacing:.1em;font-weight:600}
+.area ul{list-style:none;margin:0;padding:0;display:grid;gap:8px;color:var(--muted)}
+.area li{transition:color .3s,transform .4s var(--ease)}
+.area li:hover{color:var(--ink);transform:translateX(6px)}
+/* Credentials */
+.creds{list-style:none;margin:28px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.creds li{border-top:1px solid var(--ink);padding-top:12px;font-size:.8rem;color:var(--muted);line-height:1.45}
+.creds b{display:block;font-family:var(--sans);font-size:1.3rem;font-weight:500;color:var(--ink);letter-spacing:-.01em;margin-bottom:4px}
+@media (max-width:1180px){.areas{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:767px){.areas{grid-template-columns:1fr 1fr}.creds{grid-template-columns:1fr}}
